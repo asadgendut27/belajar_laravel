@@ -1,4 +1,8 @@
-<html>
-<h1>Hello Laravel</h1>
-<p>Ini view pertama</p>
-</html>
+@extends('layouts.main')
+
+@section('title', 'Home')
+
+@section('content')
+    <h1>Home Page</h1>
+    <p>Selamat datang di Laravel</p>
+@endsection
