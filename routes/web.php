@@ -2,12 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/create', [HomeController::class, 'create']);
 Route::get('/show', [HomeController::class, 'show']);
-
+Route::resource('posts', PostController::class);
 
 ?>
+
